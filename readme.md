@@ -1,30 +1,32 @@
 ﻿# Welcome To Bookstore:)
 At Bookstore you can add books to warehouse and order books for customer.
 
-Bookstore build as  3 microservices system:
+Bookstore is built as 3 microservices system:
 1. bookstore-service
 2. bookstore-warehouse-service
 3. bookstore-crm-service
 
-All the services "dockerized" and upload to DockerHub as images,
- "docker-compose.yml" will pull the images, combined and run them together.
+All the services are "dockerized" and uploaded to DockerHub as images,
+ "docker-compose.yml" will pull the images, combine and run them together.
 
 **HOW TO USE:**
-**Download** "docker-compose.yml" 
-**Open** the terminal at the location of the file.
-**Type** "docker-compose up" (to start)
-**Goto**  [http://localhost:8081/swagger-ui.html](http://localhost:8081/swagger-ui.html)
-**Functionality** use the functionality of Bookstore (by using swagger-ui) 
-**Open** the terminal at the location of the file.
-**Type** "docker-compose down" (to stop)
+
+- **Download** "docker-compose.yml"
+- **Open** the terminal at the location of the file.
+- **Type** "docker-compose up" (to start)
+- **Goto**  [http://localhost:8081/swagger-ui.html](http://localhost:8081/swagger-ui.html)
+- **Functionality** use the functionality of Bookstore (by using swagger-ui) 
+- **Open** the terminal at the location of the file.
+- **Type** "docker-compose down" (to stop)
 
 
 
 
 **Important to know abut Bookstore system:**
--The system is key sensitive.
--Every customer can order book just if the book exist at warehouse.
--If you ask the books that was order for specific customer, you get the "books", and the orders deleted (because orderד executed and the book supplied).
+- The system is case sensitive.
+- Every customer can order book just if the book exist at warehouse.
+- When you ask for the books that were ordered for specific customer, you will get the "books" and the orders will be deleted 
+(because orders executed and the book supplied).
 
 **Functionality of bookstore:**
  - /bookstore/addBook
@@ -38,3 +40,4 @@ All the services "dockerized" and upload to DockerHub as images,
  - /bookstore/orderBook/{customerName}/{bookId}
  - /bookstore/retrieveBooksByIds
  
+# Enjoy:)
