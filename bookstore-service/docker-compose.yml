@@ -1,0 +1,32 @@
+version: '3.3'
+services:
+  #bookstore-discovery-server:
+   # image: bookstore-discovery-server:latest
+    #container_name: bookstore-discovery-server
+    #restart: always
+    #ports:
+    #  - 8761:8761
+
+  bookstore-service:
+    image: ohadfisher/bookstore-service:latest
+    container_name: bookstore-service
+    restart: always
+    ports:
+      - 8081:8081
+
+  bookstore-crm-service:
+    image: ohadfisher/bookstore-crm-service:latest
+    container_name: bookstore-crm-service
+    restart: always
+    ports:
+      - 8083:8083
+
+  bookstore-warehouse-service:
+    image: ohadfisher/bookstore-warehouse-service:latest
+    container_name: bookstore-warehouse-service
+    restart: always
+    ports:
+     - 8082:8082
+
+
+  
